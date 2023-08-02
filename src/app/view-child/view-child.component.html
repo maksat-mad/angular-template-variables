@@ -1,0 +1,14 @@
+<a routerLink="/">Go Home</a>
+
+<br><br><br>
+
+<app-my-counter></app-my-counter>
+
+<br><br><br>
+
+<button (click)="increaseCounter()">Parent Add by 1</button>
+<button (click)="decreaseCounter()">Parent Subtract by 1</button>
+
+<br><br><br>
+
+<app-my-counter #componentTemplateRef></app-my-counter>

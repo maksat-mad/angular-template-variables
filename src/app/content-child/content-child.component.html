@@ -1,0 +1,29 @@
+<a routerLink="/">Go Home</a>
+
+<br><br><br>
+
+<app-my-cards>
+  <div #header ngProjectAs='header'>Card Header</div>
+  <span id='card-sub-header'>Card Sub Header</span>
+  <div class="card-body">
+      This is a card Body!!!
+  </div>
+  <footer title="card-footer">
+      Card Footer.
+  </footer>
+</app-my-cards>
+
+<br><br><br>
+
+<app-my-cards2>
+  <app-content-child-demo></app-content-child-demo>
+  <app-content-child-demo></app-content-child-demo>
+  <app-content-child-demo></app-content-child-demo>
+  <app-content-child-demo></app-content-child-demo>
+  <app-content-child-demo></app-content-child-demo>
+</app-my-cards2>
+
+<br><br><br>
+
+<app-content-child-demo #contentChild></app-content-child-demo>
+{{ contentChild | json }}
